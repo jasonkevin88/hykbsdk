@@ -1,0 +1,32 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  package="com.m3839.fcm.sdk"
+  >
+  <uses-permission android:name="android.permission.GET_TASKS" />
+
+  <application 
+    android:networkSecurityConfig="@xml/network_security_config">
+
+
+    <activity android:name="com.m3839.fcm.sdk.LaunchActivity"
+      android:launchMode="singleTop"
+      android:screenOrientation="portrait">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+
+    <activity android:name="com.m3839.fcm.sdk.MainPluginActivity"
+      tools:replace="android:launchMode, android:screenOrientation"
+      android:launchMode="singleInstance"
+      android:configChanges="orientation|keyboard|screenSize">
+      <meta-data android:name="unityplayer.UnityActivity" android:value="true" />
+    </activity>
+   
+
+  </application>
+
+
+</manifest>

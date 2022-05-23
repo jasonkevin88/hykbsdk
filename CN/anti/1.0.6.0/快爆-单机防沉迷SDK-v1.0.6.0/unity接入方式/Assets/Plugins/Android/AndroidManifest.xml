@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  package="com.m3839.fcm.sdk"
+  >
+  <uses-permission android:name="android.permission.GET_TASKS" />
+
+  <application 
+    android:networkSecurityConfig="@xml/network_security_config">
+
+  
+  </application>
+
+
+</manifest>

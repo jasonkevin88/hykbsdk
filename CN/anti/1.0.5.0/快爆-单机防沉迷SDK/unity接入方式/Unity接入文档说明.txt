@@ -1,0 +1,1 @@
+推荐使用unity2018版本，如果使用unity2019版本，不需要将AndroidManifest.xml文件配置复制进去
